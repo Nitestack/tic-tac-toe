@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+
+  gap: 0;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  border: 5px solid cadetblue;
+  border-radius: 12px;
+
+  background-color: darkcyan;
+}
+
+.field-row-1 {
+  border-top: none;
+}
+
+.field-row-3 {
+  border-bottom: none;
+}
+
+.field-col-1 {
+  border-left: none;
+}
+
+.field-col-3 {
+  border-right: none;
+}
+
+.reset-button {
+  background-color: red;
+  border-radius: 6px;
+  color: white;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  cursor: pointer;
+
+  border: none;
+
+  font-size: large;
+
+  text-transform: uppercase;
+}
+
+.reset-button:disabled {
+  background-color: gray;
+  color: black;
+  cursor: not-allowed;
+}

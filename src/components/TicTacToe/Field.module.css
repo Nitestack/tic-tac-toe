@@ -1,0 +1,29 @@
+.field {
+  font-size: 100px;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  width: 128px;
+  height: 128px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background: transparent;
+
+  border: 2px solid aquamarine;
+}
+
+.x {
+  color: greenyellow;
+}
+
+.o {
+  color: bisque;
+}

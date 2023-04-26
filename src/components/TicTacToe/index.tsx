@@ -34,14 +34,18 @@ const TicTacToe: Component = () => {
   }
   return (
     <div class={classes.container}>
-      <div>
+      <p class={classes['status-text']}>
         <Switch fallback="Noch kein Gewinner...">
           <Match when={typeof win() !== 'undefined' && win() !== null}>
-            {win() ? 'X' : 'O'} gewinnt!
+            <div class={classes.status}>
+              Spieler {win() ? 'X' : 'O'} gewinnt!
+            </div>
           </Match>
-          <Match when={win() === null}>Unentschieden!</Match>
+          <Match when={win() === null}>
+            <div class={classes.status}>Unentschieden!</div>
+          </Match>
         </Switch>
-      </div>
+      </p>
       <div class={classes.grid}>
         <Field
           class={`${classes['field-row-1']} ${classes['field-col-1']}`}

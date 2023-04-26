@@ -8,7 +8,9 @@
   align-items: center;
   justify-content: center;
 
-  background-color: aqua;
+  background-color: darkslategray;
+  color: white;
+  font-size: x-large;
 }
 
 .main {
@@ -30,5 +32,6 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 
-  background-color: aqua;
+  background-color: darkslategray;
+  color: white;
 }

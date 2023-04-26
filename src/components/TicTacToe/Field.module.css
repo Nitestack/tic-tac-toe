@@ -18,6 +18,9 @@
   background: transparent;
 
   border: 2px solid aquamarine;
+
+  animation-name: renderGutter;
+  animation-duration: 2s;
 }
 
 .x {
@@ -26,4 +29,30 @@
 
 .o {
   color: bisque;
+}
+
+.click {
+  animation-name: fadeIn;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    font-size: xx-small;
+  }
+  to {
+    opacity: 1;
+    font-size: 100px;
+  }
+}
+
+@keyframes renderGutter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

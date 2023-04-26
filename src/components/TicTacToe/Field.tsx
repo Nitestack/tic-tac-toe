@@ -120,10 +120,10 @@ const TicTacToeField: Component<{
           {' '}
         </Match>
         <Match when={board()[props.row - 1][props.col - 1]}>
-          <div class={classes.x}>X</div>
+          <div class={`${classes.x} ${classes.click}`}>X</div>
         </Match>
         <Match when={!board()[props.row - 1][props.col - 1]}>
-          <div class={classes.o}>O</div>
+          <div class={`${classes.o} ${classes.click}`}>O</div>
         </Match>
       </Switch>
     </button>

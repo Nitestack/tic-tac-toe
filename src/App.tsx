@@ -13,7 +13,7 @@ const App: Component = () => {
       <main class={classes.main}>
         <TicTacToe />
       </main>
-      <footer class={classes.footer}>Erstellt bei Nhan and Alex</footer>
+      <footer class={classes.footer}>Erstellt von Nhan and Alex</footer>
     </>
   );
 };

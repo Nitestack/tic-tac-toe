@@ -60,3 +60,23 @@
   color: black;
   cursor: not-allowed;
 }
+
+.status-text {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.status {
+  animation-name: fadeIn;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
